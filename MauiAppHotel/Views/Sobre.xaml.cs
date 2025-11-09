@@ -7,7 +7,7 @@ namespace MauiAppHotel.Views
             InitializeComponent();
         }
 
-        private async void OnBtnVoltarClicked(object sender, EventArgs e)
+        public async void OnBtnVoltarClicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
         }
