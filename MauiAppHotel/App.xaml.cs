@@ -16,7 +16,7 @@ namespace MauiAppHotel
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
+            MainPage = new NavigationPage(new Views.Inicial());
         }
 
         //Redimensionando a janela padrão do aplicativo

@@ -4,13 +4,13 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Gray100}">
+             BackgroundColor="{StaticResource MidnightBlue}">
     <!--XAML é muito mais exigente que HTML-->
     <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="3" Spacing="10">
         <Label 
             Text="Cálculo da Diária"
             FontFamily="Poppins-Regular" 
-            TextColor="{StaticResource Primary}" 
+            TextColor="{StaticResource PrimaryDark}" 
             FontSize="40"
             HorizontalOptions="Center"
             />
@@ -25,7 +25,7 @@
                     
                     
                     <Label Grid.Row="0" Grid.Column="1" 
-                           TextColor="{StaticResource Primary}"
+                           TextColor="{StaticResource PrimaryDark}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"
                            />
@@ -37,7 +37,7 @@
                              Increment="1"
                              WidthRequest="120"
                              HeightRequest="40" 
-                             BackgroundColor="{StaticResource Primary}">
+                             BackgroundColor="{StaticResource PrimaryDark}">
                         
                     </Stepper>
                     
@@ -46,7 +46,7 @@
                            FontFamily="Poppins-Regular"/>
 
                     <Label Grid.Row="1" Grid.Column="1" 
-                           TextColor="{StaticResource Primary}"
+                           TextColor="{StaticResource PrimaryDark}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_criancas}"
                        />
@@ -58,7 +58,7 @@
                              Increment="1"
                              WidthRequest="120"
                              HeightRequest="40"
-                             BackgroundColor="{StaticResource Primary}"> 
+                             BackgroundColor="{StaticResource PrimaryDark}"> 
                         
                     </Stepper>
                 </Grid>
@@ -91,15 +91,15 @@
                 <VerticalStackLayout Spacing="15" Margin="10">
                     <Button Text="Sobre"
                             FontFamily="Poppins-Regular"
-                            BackgroundColor="{StaticResource Primary}"
-                            TextColor="White"
+                            BackgroundColor="{StaticResource PrimaryDark}"
+                            TextColor="{StaticResource MidnightBlue}"
                             CornerRadius="10"
                             Clicked="OnBtnSobreClicked" />
 
                     <Button Text="Avançar" 
                             FontFamily="Poppins-Regular"
-                            BackgroundColor="{StaticResource Primary}"
-                            TextColor="White"
+                            BackgroundColor="{StaticResource PrimaryDark}"
+                            TextColor="{StaticResource MidnightBlue}"
                             CornerRadius="10"
                             Clicked="Button_Clicked"/>
                 </VerticalStackLayout>

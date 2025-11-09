@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Inicial"
+             Title="Inicial"
+             BackgroundColor="{StaticResource MidnightBlue}"
+             NavigationPage.HasNavigationBar="False">
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="20" Spacing="40">
+        <Label Text="Hotel MAUI "
+         FontFamily="Poppins-Medium"
+         FontSize="45"
+         TextColor="{StaticResource PrimaryDark}"
+         HorizontalOptions="Center" />
+        
+        <Label Text="Conheça nossas suítes e faça já sua Hospedagem!"
+          FontFamily="Poppins-Light"
+          FontSize="20"
+          TextColor="{StaticResource PrimaryDark}"
+          HorizontalOptions="Center"
+          HorizontalTextAlignment="Center"/>
+
+        <Button Text="Avançar" 
+          FontFamily="Poppins-Regular"
+          BackgroundColor="{StaticResource PrimaryDark}"
+          TextColor="{StaticResource MidnightBlue}"
+          CornerRadius="10"
+          Clicked="Button_Clicked"
+          HorizontalOptions="Center"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
